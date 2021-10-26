@@ -5,5 +5,6 @@ export const dblLinear = (n: number) => {
     sequence[1] = 2 * sequence[0] + 1;
     sequence[2] = 3 * sequence[0] + 1;
     sequence[3] = 2 * (2 * sequence[0] + 1) + 1;
+    sequence[4] = 2 * (3 * sequence[0] + 1) + 1;
     return sequence[n];
 };
