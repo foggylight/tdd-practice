@@ -11,5 +11,6 @@ describe('dblLinear', () => {
         expect(dblLinear(1)).toBe(3);
         expect(dblLinear(2)).toBe(4);
         expect(dblLinear(3)).toBe(7);
+        expect(dblLinear(4)).toBe(9);
     });
 });
