@@ -9,4 +9,8 @@ describe('dblLinear', () => {
         const res = dblLinear(5);
         expect(typeof res).toBe('number');
     });
+
+    test('function works', () => {
+        expect(dblLinear(0)).toBe(1);
+    })
 });
