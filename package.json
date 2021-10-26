@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "npx jest --watchAll",
     "test": "npx jest",
-    "build": "tsc"
+    "build": "tsc",
+    "temp": "git add . && git commit -m 'temp'"
   },
   "author": "",
   "license": "ISC",
