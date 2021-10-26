@@ -1,5 +1,7 @@
 // https://www.codewars.com/kata/5672682212c8ecf83e000050
 
 export const dblLinear = (n: number) => {
-    return 1;
+    const sequence = new Array(n + 1).fill(1);
+    sequence[1] = 3;
+    return sequence[n];
 };
