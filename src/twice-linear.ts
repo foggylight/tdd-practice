@@ -3,13 +3,19 @@
 export const dblLinear = (n: number) => {
     let sequence = [1];
 
-    for (let i = 1, j = 1; i <= n + 1; i = i * 2 + 1, j *= 2) {
-        const y = (index: number) => 2 * sequence[i - j + index] + 1;
-        const z = (index: number) => 3 * sequence[i - j + index] + 1;
-        const newYs = new Array(j).fill(1).map((n, index) => y(index));
-        const newZs = new Array(j).fill(1).map((n, index) => z(index));
-        sequence = [...sequence, ...newYs, ...newZs];
+    for (let i = 0, x1 = 0, x2 = 0; i < n; i += 1) {
+        const y = 2 * sequence[x1] + 1;
+        const z = 3 * sequence[x2] + 1;
+        if (y <= z) {
+            sequence.push(y);
+            x1 += 1;
+        } if (z === y) {
+            x2 += 1;
+        } else if (z < y) {
+            sequence.push(z);
+            x2 += 1;
+        }
     }
 
-    return [...new Set(sequence)].sort((a, b) => a - b)[n];
+    return sequence[n];
 };
