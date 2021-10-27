@@ -11,5 +11,5 @@ export const dblLinear = (n: number) => {
         sequence = [...sequence, ...newYs, ...newZs];
     }
 
-    return sequence.sort((a, b) => a - b)[n];
+    return [...new Set(sequence)].sort((a, b) => a - b)[n];
 };
