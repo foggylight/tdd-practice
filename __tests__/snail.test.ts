@@ -1,5 +1,5 @@
 import snailSort from '../src/snail';
 
-test('function exists', () => {
-    snailSort();
+test('function takes an array as the argument', () => {
+    snailSort([[]]);
 });
