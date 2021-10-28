@@ -1,4 +1,4 @@
-const snailSort = () => {
+const snailSort = (arr: Array<Array<number>>) => {
 
 };
 
