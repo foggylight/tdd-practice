@@ -1,5 +1,6 @@
 import snailSort from '../src/snail';
 
-test('function takes an array as the argument', () => {
-    snailSort([[]]);
+test('function returns an array', () => {
+    const res = snailSort([[]]);
+    expect(Array.isArray(res)).toBeTruthy();
 });
