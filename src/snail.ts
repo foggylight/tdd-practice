@@ -3,7 +3,8 @@ const snailSort = (arr: Array<Array<number>>): Array<number> => {
     let temp = [...arr];
     for (let i = 0, mid = 0, dir = 1; temp.length > 0; ) {
         if (temp.length === 1) {
-            res.push(...temp.pop());
+            const last = i > 0 ? temp.pop().reverse() : temp.pop();
+            res.push(...last);
             break;
         }
         if (i === 0) {
