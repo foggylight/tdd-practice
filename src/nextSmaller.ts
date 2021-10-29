@@ -1,5 +1,5 @@
 const nextSmaller = (n: number): number => {
-    return n;
+    return +`${n}`.split('').reverse().join('');
 };
 
 export default nextSmaller;
