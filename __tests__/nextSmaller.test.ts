@@ -1,5 +1,5 @@
 import nextSmaller from '../src/nextSmaller';
 
-test('function exists', () => {
-    nextSmaller();
+test('function takes an integer as the argument', () => {
+    nextSmaller(21);
 });
