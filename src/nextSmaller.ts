@@ -18,7 +18,7 @@ const nextSmaller = (num: number): number => {
             break;
         }
     }
-    return +res.join('');
+    return res.length > 1 ? +res.join('') : -1;
 };
 
 export default nextSmaller;
