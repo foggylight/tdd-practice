@@ -9,4 +9,6 @@ test('function works', () => {
 
     expect(nextSmaller(9)).toBe(-1);
     expect(nextSmaller(111)).toBe(-1);
+    expect(nextSmaller(135)).toBe(-1);
+    expect(nextSmaller(1017)).toBe(-1);
 });
