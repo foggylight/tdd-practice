@@ -1,5 +1,5 @@
-const nextSmaller = (n: number) => {
-
+const nextSmaller = (n: number): number => {
+    return n;
 };
 
 export default nextSmaller;
