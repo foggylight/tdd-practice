@@ -1,8 +1,8 @@
 const nextSmaller = (num: number): number => {
     const arr = `${num}`.split('').map(n => +n);
     let res: Array<number> = [];
-    for (let i = arr.length - 2, j = arr.length - 1; j > 0; ) {
-        if (arr[i] < arr[j]) {
+    for (let i = arr.length - 2, j = arr.length - 1; i >= 0; ) {
+        if (arr[i] <= arr[j]) {
             j -= 1;
         } if (j === i) {
             i -= 1;
