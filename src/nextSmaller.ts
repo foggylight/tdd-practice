@@ -1,4 +1,4 @@
-const nextSmaller = () => {
+const nextSmaller = (n: number) => {
 
 };
 
