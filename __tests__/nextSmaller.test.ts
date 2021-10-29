@@ -1,5 +1,5 @@
 import nextSmaller from '../src/nextSmaller';
 
 test('function works', () => {
-    expect(typeof nextSmaller(21)).toBe('number');
+    expect(nextSmaller(21)).toBe(12);
 });
