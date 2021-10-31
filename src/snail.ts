@@ -1,6 +1,9 @@
 const snail = (array: Array<Array<number>>): Array<number> => {
     const result = [];
-    result.push(...array.pop());
+    while (array.length > 0) {
+        result.push(...array.shift());
+        array.map(row => row.reverse());
+    }
     return result;
 };
 
