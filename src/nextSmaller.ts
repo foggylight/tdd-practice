@@ -1,5 +1,5 @@
 const nextSmaller = (number: number): number => {
-    return 0;
+    return -1;
 };
 
 export default nextSmaller;
