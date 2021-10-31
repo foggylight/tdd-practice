@@ -1,4 +1,4 @@
-const snail = () => {
+const snail = (array: Array<Array<number>>) => {
 
 };
 
