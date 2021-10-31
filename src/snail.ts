@@ -1,5 +1,5 @@
-const snailSort = () => {
+const snail = () => {
 
 };
 
-export default snailSort;
+export default snail;

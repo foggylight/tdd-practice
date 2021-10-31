@@ -1,5 +1,5 @@
-import snailSort from '../src/snail';
+import snail from '../src/snail';
 
 test('function exists', () => {
-    snailSort();
+    snail();
 });
