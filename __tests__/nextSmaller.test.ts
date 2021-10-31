@@ -8,4 +8,5 @@ test('function works', () => {
 
     expect(nextSmaller(21)).toBe(12);
     expect(nextSmaller(121)).toBe(112);
+    expect(nextSmaller(211)).toBe(121);
 });
