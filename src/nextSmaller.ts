@@ -1,5 +1,12 @@
 const nextSmaller = (number: number): number => {
-    const result = `${number}`.split('').reverse();
+    let result = `${number}`.split('');
+    for (let currentIndex = result.length - 1; currentIndex > 0; currentIndex -= 1) {
+        if (result[currentIndex - 1] > result[currentIndex]) {
+            const beginning = result.slice(0, currentIndex - 1);
+            const end = result.slice(currentIndex - 1).reverse();
+            result = [...beginning, ...end];
+        }
+    }
     return result.length > 1 && result[0] !== '0' && +result.join('') < number ? +result.join('') : -1;
 };
 
