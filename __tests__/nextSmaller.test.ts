@@ -5,4 +5,5 @@ test('function works', () => {
     expect(nextSmaller(21)).toBe(12);
     expect(nextSmaller(10)).toBe(-1);
     expect(nextSmaller(11)).toBe(-1);
+    expect(nextSmaller(79)).toBe(-1);
 });
