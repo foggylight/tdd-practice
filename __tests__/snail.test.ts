@@ -1,5 +1,5 @@
 import snail from '../src/snail';
 
-test('function returns an array', () => {
-    expect(Array.isArray(snail([[]]))).toBeTruthy();
+test('function works', () => {
+    expect(snail([[]])).toEqual([]);
 });
